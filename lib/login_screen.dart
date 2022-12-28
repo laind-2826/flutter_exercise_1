@@ -47,15 +47,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     return Material(
       child: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment(0.8, 1),
-            colors: <Color>[
-              Color.fromRGBO(254, 115, 72, 1),
-              Color.fromRGBO(245, 57, 107, 1)
-            ], // Gradient from https://learnui.design/tools/gradient-generator.html
-            tileMode: TileMode.mirror,
-          ),
+            gradient: LinearGradient(
+                begin: Alignment(-1,-1),
+                end: Alignment(1.7,0),
+                colors: [
+                  Color.fromRGBO(255,119,69,1),
+                  Color.fromRGBO(246,53,108,1)]
+            )
         ),
         child: Padding(
             padding: const EdgeInsets.all(10),
